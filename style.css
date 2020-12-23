@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  /* background: linear-gradient(
+    to right,
+    rgba(240, 240, 240, 0.521) 0%,
+    rgba(240, 240, 240, 0.521) 50%,
+    white 100%
+  ); */
+  background: white;
+}
+
+.grayshade {
+  min-height: 100vh;
+  height: 100%;
+  width: 25%;
+  position: absolute;
+  z-index: -9;
+  background: rgba(243, 243, 243, 0.521);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  background: white;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  min-height: 100vh;
+  padding-bottom: 12px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  font-size: 24px;
+  margin: 2em auto;
+}
+
+.hero__social a {
+  color: #0d7ee7;
+}
+
+.hero__name {
+  font-size: clamp(50px, 6vw, 70px);
+  background: linear-gradient(to right, rgb(83, 83, 83), black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu__tray {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu {
+  max-width: 280px;
+  min-height: 280px;
+  text-align: center;
+  margin-top: 30px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.16);
+  background: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 12px;
+  margin-right: 12px;
+  color: black;
+}
+
+.menu:hover {
+  transform: scale(1.0246);
+  background: rgb(250, 250, 250);
+}
+
+.menu__icon {
+  height: 150px;
+}
+
+.work__menu__icon {
+  background: url(./assets/undraw_QA_engineers_dg5p.svg);
+}
+
+.about__menu__icon {
+  background: url(./assets/undraw_businessman_97x4.svg);
+}
+
+.contact__menu__icon {
+  background: url(./assets/undraw_business_chat_ldig.svg);
+}
+
+.menu__icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu__name {
+  background: rgba(245, 245, 245, 0.61);
+  border-radius: 5px;
+  padding: 12px 0;
+}
+
+@media screen and (max-width: 350px) {
+  .hero__name {
+    font-size: 32px;
+  }
+}
+
+.ribbon {
+  position: absolute;
+  top: 0;
+  height: 5px;
+  z-index: 99;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #a85e6c 0%,
+    #a85e6c 12.5%,
+    #e37f52 12.5%,
+    #e37f52 25%,
+    #ef9f48 25%,
+    #ef9f48 37.5%,
+    #9cb641 37.5%,
+    #9cb641 50%,
+    #009484 50%,
+    #009484 62.5%,
+    #21acb8 62.5%,
+    #21acb8 75%,
+    #1972dd 75%,
+    #1972dd 87.5%,
+    #8fa0ae 87.5%,
+    #8fa0ae 100%
+  );
+}
+
+.pattern-bg {
+  background: url(./assets/pattern-bg.png);
+  height: 500px;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 53%;
+  width: 500px;
+  position: absolute;
+  z-index: -99;
+  opacity: 0.1;
+}
