@@ -43,6 +43,13 @@ body {
   padding-bottom: 12px;
 }
 
+.hero__tray {
+  z-index: 9;
+  background: white;
+  position: absolute;
+  width: 100%;
+}
+
 .hero {
   text-align: center;
 }
@@ -132,6 +139,9 @@ body {
   .hero__name {
     font-size: 32px;
   }
+  .hero__tagline {
+    font-size: 14px;
+  }
 }
 
 .ribbon {
@@ -173,4 +183,45 @@ body {
   position: absolute;
   z-index: -99;
   opacity: 0.1;
+}
+
+.container {
+  position: relative;
+}
+
+.section {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  top: 0;
+  background: white;
+  transition: all 0.9s ease;
+}
+
+/*WORKS*/
+
+.work__head {
+  font-size: 32px;
+}
+
+.work__tray {
+  z-index: 99;
+  right: -1200px;
+  opacity: 0;
+}
+
+.about__tray {
+  z-index: 100;
+  left: -1200px;
+  opacity: 0;
+}
+
+.contact__tray {
+  z-index: 101;
+  right: -1200px;
+  opacity: 0;
+}
+
+.section__menu {
+  cursor: pointer;
 }

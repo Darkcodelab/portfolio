@@ -15,53 +15,74 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="ribbon"></div>
     <div class="container">
-      <div class="pattern-bg"></div>
-      <div class="grayshade"></div>
-      <div class="hero">
-        <h1 class="hero__name">Deepan Chakravarthi</h1>
-        <p class="hero__tagline">
-          I build websites for startups and large scale businesses
-        </p>
-        <ul class="hero__social">
-          <li class="hero__social__link">
-            <a href="/facebook"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li class="hero__social__link">
-            <a href="/linkedin"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li class="hero__social__link">
-            <a href="/gmail"><i class="far fa-envelope"></i></a>
-          </li>
-          <li class="hero__social__link">
-            <a href="/instagram"><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul>
+      <div class="hero__tray">
+        <div class="pattern-bg"></div>
+        <div class="grayshade"></div>
+        <div class="hero">
+          <h1 class="hero__name">Deepan Chakravarthi</h1>
+          <p class="hero__tagline">
+            I build websites for startups and large scale businesses
+          </p>
+          <ul class="hero__social">
+            <li class="hero__social__link">
+              <a href="/facebook"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="hero__social__link">
+              <a href="/linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="hero__social__link">
+              <a href="/gmail"><i class="far fa-envelope"></i></a>
+            </li>
+            <li class="hero__social__link">
+              <a href="/instagram"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__tray">
+          <div class="menu work-card">
+            <div class="menu__icon work__menu__icon"></div>
+            <div class="menu__name">
+              <h2>WORKS</h2>
+            </div>
+          </div>
+          <div class="menu about-card">
+            <div class="menu__icon about__menu__icon"></div>
+            <div class="menu__name">
+              <h2>ABOUT</h2>
+            </div>
+          </div>
+          <div class="menu contact-card">
+            <div class="menu__icon contact__menu__icon"></div>
+            <div class="menu__name">
+              <h2>CONTACT</h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="menu__tray">
-        <a class="menu" href="/works">
-          <div class="menu__icon work__menu__icon"></div>
-          <div class="menu__name">
-            <h2>WORKS</h2>
-          </div>
-        </a>
-        <a class="menu" href="/about">
-          <div class="menu__icon about__menu__icon"></div>
-          <div class="menu__name">
-            <h2>ABOUT</h2>
-          </div>
-        </a>
-        <a href="/contact" class="menu">
-          <div class="menu__icon contact__menu__icon"></div>
-          <div class="menu__name">
-            <h2>CONTACT</h2>
-          </div>
-        </a>
-      </div>
+      <section class="work__tray section">
+        <div class="work__grayshade grayshade"></div>
+        <h1 class="work__head">Works</h1>
+        <div class="section__menu">
+          <div class="home-card">Home</div>
+          <div class="about-card">About</div>
+          <div class="contact-card">Contact</div>
+        </div>
+      </section>
+      <section class="about__tray section">
+        <div class="about__grayshade grayshade"></div>
+        <h1 class="about__head">About</h1>
+      </section>
+      <section class="contact__tray section">
+        <div class="contact__grayshade grayshade"></div>
+        <h1 class="contact__head">Contact</h1>
+      </section>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
