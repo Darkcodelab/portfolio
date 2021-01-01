@@ -7,7 +7,7 @@ const contactTray = document.querySelector(".contact__tray");
 const homeCard = document.querySelectorAll(".home-card");
 const homeTray = document.querySelector(".home-tray");
 
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 3; i++) {
   if (workCard[i]) {
     workCard[i].addEventListener("click", function () {
       workTray.style.right = "0";
